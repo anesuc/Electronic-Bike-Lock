@@ -13,7 +13,7 @@ When the bike is currently in a locked state and a card is scanned but does not 
 
 ## How to set it up and run
 
-1. Firstly, connect the RFID reader and writer (rc522) as specified in the code. You can also follow the visual representation of the connections as seen [here](RFID&#32Pin&#32Layout.png).
+1. Firstly, connect the RFID reader and writer (rc522) as specified in the code. You can also follow the visual representation of the connections as seen [here](RFID%20Pin%20Layout.png).
 2. Connect the green LED to pin 7 and red LED to pin 8 (or whatever specified in the code under those variables).
 3. Connect the 2 actuator triggers to pin 2 and 4 (or whatever specified in the code under those variables).
 4. Now on your computer download the RFID library zip and install it (if you are using the Arduino IDE). You can do this by selecting (from the top bar menu depending on your OS "Sketch" -> "Include Library" -> "Add .ZIP library". Or by following instructions as provided [here](https://www.arduino.cc/en/Guide/Libraries).
