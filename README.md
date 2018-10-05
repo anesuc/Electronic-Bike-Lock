@@ -7,7 +7,7 @@ This is the main codebase that handles the Electronic Bike Lock logic for the En
 
 ## How does it work?
 
-It constantly checks if there is an RFID card that has been scanned. When an RFID card has been scanned it then checks if it's a valid RFID card. We then check if it matches any previously scanned RFID card, if not store the UID and any relevant information of that card, send a 1 second pulse to one of the actuator pins (i.e actuator pin A), trigger the Red LED and turn off the Green LED. If the card that has been scanned does match the previously scanned card, we then send a 1 second pulse to the other actuator pin (i.e actuator pin B), turn off Red LED and turn on Green LED.
+It constantly checks if there is an RFID card that has been scanned. When an RFID card has been scanned it then checks if it's a valid RFID card. This is followed by checking if it matches any previously scanned RFID card, if not store the UID and any relevant information of that card, send a 1 second pulse to one of the actuator pins (i.e actuator pin A), trigger the Red LED and turn off the Green LED. If the card that has been scanned does match the previously scanned card, we then send a 1 second pulse to the other actuator pin (i.e actuator pin B), turn off Red LED and turn on Green LED.
 
 When the bike is currently in a locked state and a card is scanned but does not match the one that was scanned to lock the bike, it pulses both LED pins to indicate an "access denied/invalid card" response.
 
